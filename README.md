@@ -1,5 +1,8 @@
-# appNotas
+# Aplicación de Notas
 Proyecto individual de una aplicacion de notas
 
-# express
+# Requisitos
 Requiere la intalacion de express "$npm install express"
+
+# Hecho por
+Anthony Chávez
