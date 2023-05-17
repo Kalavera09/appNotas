@@ -3,5 +3,45 @@
     padding:0;
     list-style: none;
     text-decoration: none;
+    align-items: center;
     box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    background-color: yellowgreen;
+    justify-content: space-around;
+    flex-direction: row;
+}
+img {
+    width: 12%;
+    margin:5px;
+    padding:2px;
+}
+
+.titulo{
+    margin:10px;
+    padding:5px;
+    list-style: none;
+}
+nav a.{
+    color: black;
+    font-weight: 600;
+    padding-right: 10px;
+}
+nav a:hover{
+    color:  white;
+}
+@media(max-width:700px){
+    header  {
+        flex-direction: column;
+    }
+    nav{
+        padding: 10px 0px;
+    }
+}
+body{
+    background-color: yellow;
 }

@@ -5,11 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>App De Notas</title>
 </head>
-<body><div class="logo">
-
-</div>
-    
+<body>
+    <header class="header">
+        <div class="logo"></div>
+        <img src="./img/appnotas.png" alt="Notas">
+        <h2 class="titulo">Todas las Notas</h2>
+        </div>
+        <nav>
+            <a href="" class="nav-link">Inicio</a>
+            <a href="" class="nav-link">Sobre Nosotros</a>
+            <a href="" class="nav-link">Contacto</a>
+        </nav>
+    </header>
+    <div>
+        <form onsubmit="addNuevaTarea(event)">
+            <input type="text" nombre="TareaText" autocomplete="off" placeholder="Nueva Tarea">
+            <button type="submit" class="addBotonTarea">+</button>
+        </form>
+    </div>
+    <footer>
+        <div class="div-footer"></div>
+        <p>&copy;App de Notas</p>
+    </footer>
 </body>
 </html>
