@@ -20,19 +20,43 @@ img {
     margin:5px;
     padding:2px;
 }
-
 .titulo{
     margin:10px;
     padding:5px;
     list-style: none;
 }
-nav a.{
+nav a{
     color: black;
     font-weight: 600;
     padding-right: 10px;
 }
 nav a:hover{
     color:  white;
+}
+input{
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    box-sizing: border-box;
+}
+button{
+    margin: 15px;
+    padding: 15px;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    box-sizing: border-box;
+}
+body{
+    background-color: yellow;
+}
+h2{
+    color: black;
+}
+p{
+    word-wrap: normal;
 }
 @media(max-width:700px){
     header  {
@@ -41,7 +65,4 @@ nav a:hover{
     nav{
         padding: 10px 0px;
     }
-}
-body{
-    background-color: yellow;
 }
