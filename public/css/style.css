@@ -25,6 +25,12 @@ img {
     padding:5px;
     list-style: none;
 }
+nav{
+    padding: 10px 0px;
+    font-size: small;
+    display: flex;
+    font-size: medium;
+}
 nav a{
     color: black;
     font-weight: 600;
@@ -52,11 +58,24 @@ button{
 body{
     background-color: yellow;
 }
-h2{
-    color: black;
-}
 p{
     word-wrap: normal;
+}
+div.box{
+    align-self: center;
+}
+footer{
+    display: ;
+}
+h3{
+
+}
+div.redesSociales {
+    display: flex;
+    justify-content: flex-end;
+}
+small{
+    display: flex;
 }
 @media(max-width:700px){
     header  {
