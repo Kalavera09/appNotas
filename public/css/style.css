@@ -6,8 +6,8 @@
     align-items: center;
     box-sizing: border-box;
 }
-body{
-    font-family: sans-serif;
+.container{
+    background-color: yellow;
 }
 header{
     display: flex;
@@ -16,7 +16,7 @@ header{
     flex-direction: row;
 }
 img {
-    width: 12%;
+    width: 7%;
     margin:5px;
     padding:2px;
 }
@@ -24,6 +24,8 @@ img {
     margin:10px;
     padding:5px;
     list-style: none;
+    font-size: larger;
+    display: flex;
 }
 nav{
     padding: 10px 0px;
@@ -55,9 +57,6 @@ button{
     align-items: center;
     box-sizing: border-box;
 }
-body{
-    background-color: yellow;
-}
 p{
     word-wrap: normal;
 }
@@ -65,23 +64,37 @@ div.box{
     align-self: center;
 }
 footer{
-    display: ;
+    margin: auto;
+    padding: 0%;
+    position: fixed;
+    bottom: 0;
+    height: 18%;
+    background-color:rgba(0, 0, 0, 0.582);
+    padding: 18px;
+    text-align: center;
 }
 h3{
-
+    margin: auto;
+    padding: initial;
+    font-size: small;
+    display: flex;
 }
 div.redesSociales {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 small{
     display: flex;
+    justify-content: center;
 }
-@media(max-width:700px){
+@media(max-width:500px){
     header  {
         flex-direction: column;
     }
     nav{
         padding: 10px 0px;
+    }
+    footer {
+        height: 15%;
     }
 }
