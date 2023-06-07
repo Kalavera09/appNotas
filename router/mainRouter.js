@@ -3,9 +3,10 @@ const mainRouter = express.Router()
 const mainController = require('../controller/mainController')
 
 mainRouter.get('/',mainController.index)
+mainRouter.get('/login',mainController.login)
 
-//mainRouter.get('/',mainController.login)
+module.exports = mainRouter
+
 
 //mainRouter.get('/',)
 
-module.exports = mainRouter

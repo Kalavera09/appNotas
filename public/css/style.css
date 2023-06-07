@@ -57,6 +57,10 @@ button{
     align-items: center;
     box-sizing: border-box;
 }
+.menuPrincipal{
+    margin: auto;
+    padding: auto;
+}
 p{
     word-wrap: normal;
 }
@@ -87,6 +91,12 @@ small{
     display: flex;
     justify-content: center;
 }
+.login{
+    margin: auto;
+    padding: 0%;
+    align-items: center;
+    display: flex;
+}
 @media(max-width:500px){
     header  {
         flex-direction: column;
@@ -96,5 +106,8 @@ small{
     }
     footer {
         height: 15%;
+    }
+    img {
+        width: 7%;
     }
 }
