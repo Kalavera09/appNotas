@@ -2,7 +2,7 @@ const path = require('path')
 const express = require('express')
 const PORT = process.env.PORT || 3000
 const app = express()
-const mainRouter = require('./router/mainRouter')
+const mainRoutes = require('./routes/mainRoutes')
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -10,7 +10,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
-app.use('/', mainRouter)
+app.use('/', mainRoutes)
 
 
 app.listen(PORT, () => {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include("./partials/head.ejs") %>
+<body>
+    <%- include("./partials/header.ejs") %>
+
+<div class="container">
+<form consubmit="addNuevaTarea(event)">
+  <div class="section2">
+            <input type="text" nombre="TareaText" autocomplete="off" placeholder="Nueva Tarea">
+            <button type="submit" class="addBotonTarea">+</button>
+        </div>
+
+     </form>
+    
+    <main>
+        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, reiciendis asperiores animi a quibusdam at ab recusandae aliquam. Accusamus ea dicta ab iure exercitationem. Aut corrupti praesentium pariatur est voluptatem.
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, officiis commodi itaque unde corrupti dolorem sit odit, incidunt tempore, aut aperiam laudantium blanditiis laboriosam cupiditate? Voluptatum aliquid error porro? Eaque.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, exercitationem deleniti. Quod, nobis a error tempore nam quos explicabo voluptates cum asperiores illum minus officiis sint velit, doloremque odit rem.
+        </p> -->
+    </main>
+</div>
+
+   <%- include("./partials/footer.ejs") %>
+
+</body>
+</html>
