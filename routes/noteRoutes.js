@@ -3,10 +3,10 @@ const router = express.Router();
 
 const noteController = require ("../controller/noteController")
 
-router.get ("/" , noteController.mostrarNotas);
+router.get ("/" , noteController.showNote);
 
-router.get("/formularioNota",noteController.crearNotas)
-router.post("/",noteController.guardarNota)
+router.get("/formularioNota",noteController.createNote)
+router.post("/",noteController.storeNote)
 
 
 module.exports = router;

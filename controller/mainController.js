@@ -2,11 +2,11 @@ const path = require('path')
 const mainController = {
 
   index : (req, res)=>{
-    res.sendFile(path.join(__dirname, '../views/index.ejs'))
+    res.sendFile(path.join(__dirname, '../views/index.html'))
   },
   
   login : (req, res)=>{
-     res.sendFile(path.join(__dirname, '../views/login.ejs'))
+     res.sendFile(path.join(__dirname, '../views/login.html'))
   }
 }
 module.exports = mainController
