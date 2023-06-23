@@ -1,11 +1,11 @@
 const path = require('path')
 const express = require('express')
+const app = express() 
+
+const PORT = process.env.PORT || 3009
+
 const mainRoutes = require('./routes/mainRoutes')
 const noteRoutes = require ('./routes/noteRoutes')
-
-
-const PORT = process.env.PORT || 3000
-const app = express() 
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
