@@ -9,14 +9,14 @@
 header{
     display: flex;
     background-color: rgb(62, 197, 4);
-    justify-content: space-around;
-    flex-direction: row;
     position: relative;
-    margin: auto;
-    padding: 5px;
+    margin: 3px;
+    padding: 1px;
     border-radius: 10px;
     border: 3px solid rgba(0, 0, 0, 0.732);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    width: -webkit-fill-available;
+    justify-content: space-evenly;
 }
 .menuPrincipal{
     display: list-item;
@@ -47,13 +47,14 @@ body{
     background-image: url(../img/fondo.png);
     background-position: top center;
     background-size: contain;
+    display: flex;
+    flex-direction: column;
 }
 .container{
     width: max-content;
     background-color: rgba(35, 189, 210, 0.966);
     display: flex;
     flex-direction: column;
-    position: relative;
     margin: auto;
     padding: 3px;
     border-radius: 10px;
@@ -64,22 +65,20 @@ form{
     align-items: center;
 }
 img {
-    width: 7%;
-    margin:5px;
-    padding:2px;
+    width: 30px;
+    margin: 1px
 }
 .titulo{
-    margin:10px;
-    padding:5px;
+    margin: 3px;
+    padding: 1px;
     list-style: none;
     font-size: larger;
     display: flex;
 }
 nav{
     padding: 10px 0px;
-    font-size: small;
     display: flex;
-    font-size: medium;
+    font-size: larger;
 }
 nav a{
     color: black;
@@ -91,11 +90,11 @@ nav a:hover{
 }
 input{
     margin: 5px;
-    padding: 20px;
+    /* padding: 20px; */
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-    font-size: larger;
+    /* font-size: larger; */
     font-weight: normal;
     width: -webkit-fill-available;
 }
@@ -129,7 +128,6 @@ h3{
     font-size: medium;
     display: flex;
     font-weight: normal;
-
 }
 h4{
     font-size: large;
@@ -151,49 +149,47 @@ small{
 }
 
 footer{
-    width: -webkit-fill-available;
     background-color: rgba(0, 0, 0, 77%);
     text-align: center;
     display: flex;
     flex-direction: column;
     position: relative;
-    margin: 0px;
-    padding: 9px;
+    margin: 2px;
+    padding: 3px;
     border-radius: 7px;
     border: 3px solid rgba(0, 0, 0, 0.732);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: whitesmoke;
+    width: -webkit-fill-available;
 }
 .icon-footer {
+    margin: inherit;
+    box-sizing: border-box;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 1rem;
-    margin: 1rem 0;
-  }
-  .sigueme {
+    border-radius: 10px;
+    flex-direction: row;
+}
+ .sigueme {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: center;
     text-transform: capitalize;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    gap: 0.5rem;
-    box-shadow: 0 0 0.5rem whitesmoke;
-  }
+    border-radius: 1rem;
+    gap: 0.3rem;
+    box-shadow: 0 0 0.2rem whitesmoke;
+  } 
   .sigueme p {
     color: black;
   }
   .fa-brands {
     font-size: 1rem;
-    width: 1.5rem;
     height: 1.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100%;
+    border-radius: 1rem;
     color: #ffffff;
   }
   .fa-instagram {
@@ -232,7 +228,7 @@ footer{
         padding: 10px 0px;
     }
     footer {
-        height: 15%;
+        flex-direction: column;
     }
     img {
         width: 7%;

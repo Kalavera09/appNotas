@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
+    <%- include("../partials/head.ejs") %>
+<body style="
+background-image: url(..);
+background-position: top center;
+background-size: contain;
+">
+    <%- include("../partials/header.ejs") %>
+
 
 <h1>Detalle del Producto</h1>
     <h4>Id: <%= filteredNote.id %></h4>
     <h5>Descripcion: <%= filteredNote.descripcion %></h5> 
+
+<%- include("../partials/footer.ejs") %>
+
 </body>
 </html>

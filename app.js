@@ -13,7 +13,7 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('public'));
 
-app.use("/index", mainRoutes)
+app.use("/", mainRoutes)
 app.use("/note",noteRoutes)
 
 app.listen(PORT, () => {

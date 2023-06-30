@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+
+<%- include("../partials/head.ejs") %>
+
 <body>
     
+    <%- include("../partials/header.ejs") %>
 
 <h1>Crear Nota</h1>
 <form action="/note" method="post">
     <input type="text" name="id" placeholder="id">
     <input type="text" name="titulo" placeholder="titulo">
     <input type="text" name="descripcion" placeholder="descripcion">
+    
+    <%- include("../partials/footer.ejs") %>
+
 </body>
 </html>
+
+
