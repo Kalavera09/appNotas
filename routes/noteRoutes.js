@@ -3,9 +3,11 @@ const router = express.Router();
 
 const noteController = require ("../controller/noteController")
 
-router.get ("/" , noteController.showNote);
+router.get ("/" , noteController.getAllNote);
 
-router.get("/formularioNota",noteController.createNote)
+router.get("/createNote",noteController.createNote)
+router.get("/detailNote/:id",noteController.detailById)
+router.get("/editNote/:id",noteController.editNote)
 router.post("/",noteController.storeNote)
 
 

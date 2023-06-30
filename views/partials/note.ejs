@@ -1,0 +1,22 @@
+<title>Crear Nota</title>
+  <style>
+    /* textarea {
+      width: 100%;
+      height: 150px;
+      
+    } */
+  </style>
+  <div class="container">
+    <h1>Crear Nota</h1>
+    <form consubmit="addNewNote"></form>
+    <input type="text" nombre="NoteText"autocomplete="off" placeholder="Nota">
+    <button href="/appNotas/views/note/createNote.ejs" type="submit" id="btnCrearNota">Crear</button>
+  </div>
+
+  <script>
+    document.getElementById('btnCrearNota').addEventListener('click', function() {
+      var nota = document.getElementById('nota').value;
+      // Aquí puedes realizar alguna acción con la nota, como guardarla en una base de datos o mostrarla en la página.
+      console.log('Se creó la nota:', nota);
+    });
+  </script>

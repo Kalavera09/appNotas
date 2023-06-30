@@ -11,6 +11,12 @@ header{
     background-color: rgb(62, 197, 4);
     justify-content: space-around;
     flex-direction: row;
+    position: relative;
+    margin: auto;
+    padding: 5px;
+    border-radius: 10px;
+    border: 3px solid rgba(0, 0, 0, 0.732);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 .menuPrincipal{
     display: list-item;
@@ -25,8 +31,8 @@ header{
     display: none;
     position: absolute; 
     background-color: rgb(62, 197, 4); 
-    border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.732);
+    border-radius: 7px;
+    border: 3px solid rgba(0, 0, 0, 0.732);
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 .menuPrincipal:hover ul{
@@ -38,9 +44,9 @@ header{
     padding: .3rem 0 ;
 }
 body{
-    background-image: url(../img/fondo1.png) no-repeat center top;
-    background-size: cover;
-    background-position: center center;
+    background-image: url(../img/fondo.png);
+    background-position: top center;
+    background-size: contain;
 }
 .container{
     width: max-content;
@@ -49,10 +55,10 @@ body{
     flex-direction: column;
     position: relative;
     margin: auto;
-    padding: 5px;
+    padding: 3px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.732);
-    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);width: max-content;
+    border: 3px solid rgba(0, 0, 0, 0.732);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
 }
 form{
     align-items: center;
@@ -84,12 +90,14 @@ nav a:hover{
     color:  white;
 }
 input{
-    margin: 10px;
-    padding: 10px;
+    margin: 5px;
+    padding: 20px;
     list-style: none;
     text-decoration: none;
-    align-items: center;
     box-sizing: border-box;
+    font-size: larger;
+    font-weight: normal;
+    width: -webkit-fill-available;
 }
 button{
     font-size: 1em;
@@ -100,32 +108,38 @@ button{
     box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
     color: white;
     background-color: black;
-  }
-  button:hover{
+}
+button:hover{
     background-color: rgb(45, 45, 45);
-  }
+}
 p{
     word-wrap: normal;
 }
 div.box{
     align-self: center;
 }
-footer{
-    width: -webkit-fill-available;
-    margin: auto;
-    padding: 0%;
-    position: fixed;
-    bottom: 0;
-    height: 18%;
-    background-color:rgba(0, 0, 0, 0.582);
-    padding: 18px;
-    text-align: center;
+h1{
+    font-size: larger;
+    margin-block-start: 0.2em;
+    font-weight: revert
 }
 h3{
     margin: auto;
     padding: initial;
-    font-size: small;
+    font-size: medium;
     display: flex;
+    font-weight: normal;
+
+}
+h4{
+    font-size: large;
+    font-weight: normal;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 div.redesSociales {
     display: flex;
@@ -135,6 +149,80 @@ small{
     display: flex;
     justify-content: center;
 }
+
+footer{
+    width: -webkit-fill-available;
+    background-color: rgba(0, 0, 0, 77%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 0px;
+    padding: 9px;
+    border-radius: 7px;
+    border: 3px solid rgba(0, 0, 0, 0.732);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: whitesmoke;
+}
+.icon-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  .sigueme {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    background-color: #fff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+    box-shadow: 0 0 0.5rem whitesmoke;
+  }
+  .sigueme p {
+    color: black;
+  }
+  .fa-brands {
+    font-size: 1rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #ffffff;
+  }
+  .fa-instagram {
+    background: linear-gradient(
+      to top right,
+      #fcde30,
+      #e9712a,
+      #d2313b,
+      #ae4198,
+      #7540a1,
+      #5443a8
+    ); 
+  }
+  .fa-facebook {
+    background: #1e4595;  
+  }
+  .fa-facebook:hover {
+    background: #0655f3;
+  }
+  .fa-twitter,
+  .fa-github {
+    background: linear-gradient(to right top, #42a9ec, #358de6); 
+  }
+  .fa-twitter:hover,
+  .fa-github:hover,
+  .fa-facebook:hover,
+  .fa-instagram:hover {
+    color: #000;
+  }
 
 @media(max-width:500px){
     header  {

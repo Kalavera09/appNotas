@@ -7,8 +7,15 @@ const noteListPath = path.resolve(__dirname,"../data/note.json");
 const noteList = JSON.parse(fs.readFileSync(noteListPath,'utf-8'));
 
 const noteController = {
-    showNote : (req,res)=>{
+    getAllNote : (req,res)=>{
         res.render("index", { note : noteList })
+    },
+    getNotebyId:(req, res)=>{
+        let id=req.params.id
+        const filteredNote = noteList.find((note) => {
+            return note.id == id;
+          });
+        res.render("note/createNote/:id",{filteredNote})
     },
     /*
     detalleById : (req , res) => {
@@ -29,7 +36,7 @@ const noteController = {
         const filteredNote = noteList.find((note) => {
           return note.id == id;
         });
-           res.render("note/detail", {filteredNote});
+           res.render("note/detailNote", {filteredNote});
         },
     // crea una nota y lo guarda
     createNote : (req , res) => {
@@ -37,7 +44,7 @@ const noteController = {
     },
     storeNote : (req , res) => {
         let note = req.body;
-        noteList.push(note);
+        noteList.push({note});
         fs.writeFileSync(noteListPath,JSON.stringify(noteList,null,2));
         res.redirect("/note");
     },
@@ -48,8 +55,7 @@ const noteController = {
         const filteredNote = noteList.find((note) => {
             return note.id == id;
         });
-        res.render("note/edit", {note : filteredNote});
-        
+        res.render("note/editNote", {note : filteredNote});
     },
     updateNote : (req , res) => {
         let id = req.params.id;
