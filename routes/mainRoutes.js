@@ -4,7 +4,7 @@ const mainController = require('../controller/mainController')
 
 mainRoutes.get('/',mainController.index)
 mainRoutes.get('/login',mainController.login)
-mainRoutes.get('/noteApp',mainController.noteApp)
+mainRoutes.get('/note',mainController.noteApp)
 
 module.exports = mainRoutes
 

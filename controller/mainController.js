@@ -14,7 +14,7 @@ const mainController = {
     //  res.sendFile(path.join(__dirname, '../views/login.html'))
   },
   noteApp : (req, res)=>{
-    res.render("noteApp",)
+    res.render("note",)
   }
 }
 module.exports = mainController
