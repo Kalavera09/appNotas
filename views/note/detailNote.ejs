@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <%- include("../partials/head.ejs") %>
+
 <body>
+
     <%- include("../partials/header.ejs") %>
 
+<div class="container">
+    <% if (filteredNote) { %>
+    <h1>Detalle del Producto</h1>
+        <h4>Id: <%= filteredNote.titulo %></h4>
+        <h5>Descripcion: <%= filteredNote.descripcion %></h5> 
+        <% } %>
+</div>
 
-<h1>Detalle del Producto</h1>
-    <h4>Id: <%= filteredNote.id %></h4>
-    <h5>Descripcion: <%= filteredNote.descripcion %></h5> 
-
-<%- include("../partials/footer.ejs") %>
+    <%- include("../partials/footer.ejs") %>
 
 </body>
 </html>

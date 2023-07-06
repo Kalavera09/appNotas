@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include("../partials/head.ejs") %>
 
- <body>
+   <%- include("../partials/head.ejs") %>
 
-    <%- include("../partials/header.ejs") %>
+<body>
 
- <h1>Borrar Nota</h1>
-    <form action="/products" method="delete">
-            <input type="text" name="id" placeholder="id">
-            <input type="text" name="titulo" placeholder="titulo">
-            <input type="text" name="descripcion" placeholder="descripcion">
-            <a href="/" class="nav-link">Inicio</a>
+   <%- include("../partials/header.ejs") %>
 
+<div class="container">
+   <h1>Borrar Nota</h1>
+      <form action="/products" method="delete">
+         <input type="text" name="id" placeholder="id">
+         <input type="text" name="titulo" placeholder="titulo">
+         <input type="text" name="descripcion" placeholder="descripcion">
+         <nav class="options2">
+            <a href="/" class="nav-link">Borrar</a>
+      </nav>
+</div>
  </form> 
 
-        <%- include("../partials/footer.ejs") %>
+   <%- include("../partials/footer.ejs") %>
 
 </body>
 </html>

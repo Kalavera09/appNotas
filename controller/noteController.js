@@ -34,7 +34,7 @@ const noteController = {
         const id = req.params.id;
         //buscamos en el array la nota que coincida con el que llega por parametro.
         const filteredNote = noteList.find((note) => {
-          return note.id == id;
+          return note.id === id;
         });
            res.render("note/detailNote", {filteredNote});
         },
@@ -53,7 +53,7 @@ const noteController = {
     editNote : (req , res) => {
         const id = req.params.id;
         const filteredNote = noteList.find((note) => {
-            return note.id == id;
+            return note.id === id;
         });
         res.render("note/editNote", {note : filteredNote});
     },
