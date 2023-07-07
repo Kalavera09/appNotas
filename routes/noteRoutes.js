@@ -5,10 +5,10 @@ const noteController = require ("../controller/noteController")
 
 router.get ("/" , noteController.getAllNote);
 
-router.get("/createNote.ejs",noteController.createNote)
-router.get("/deleteNote.ejs",noteController.deleteNote)
-router.get("/detailNote.ejs",noteController.detailById)
-router.get("/editNote.ejs",noteController.editNote)
+router.get("/createNote",noteController.createNote)
+router.get("/deleteNote",noteController.deleteNote)
+router.get("/detailNote/:id",noteController.detailById)
+router.get("/editNote/:id",noteController.editNote)
 router.post("/",noteController.storeNote)
 
 

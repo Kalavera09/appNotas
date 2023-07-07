@@ -11,9 +11,23 @@
     <%- include("./partials/noteApp.ejs") %>
 
     <% for(let index=0; index < note.length; index++) { %>
-        <h4><%= note[index].titulo %></h4>
-          <%= note[index].description %>
+
+        <article class="note">
+            <div class="note-header">
+        
+            <h3><%= note[index].titulo %></h3>
+            <p> <%= note[index].description %> </p>
+            <button href="./note/detailNote/<%= note[index].id %>" class="btn-actions">Detalle </button>
+            <button href="./note/editNote/<%= note[index].id %>" class="btn-actions">Detalle</button>
+            </article>
+        <!-- <article class="note">
+            <div class="note-header">
+        <h3><%= note[index].titulo %></h3>
+        </button> -->
 <% } %>
+    </div>
+    </article>
+<%- include("./partials/options.ejs") %>
 
 
 <%- include("./partials/footer.ejs") %>
